@@ -32,9 +32,11 @@ form.addEventListener("submit", function (event) {
     .then((res) => {
       console.log(res);
       alert("訂單送出成功");
+      this.reset();
     })
     .catch((err) => {
       console.log(err);
       alert("訂單送出失敗");
+      this.reset();
     });
 });
